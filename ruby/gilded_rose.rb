@@ -28,6 +28,7 @@ class GildedRose
 
   def cheese?(item)
     return unless item.quality < 50
+
     item.quality += item.sell_in <= 0 ? 2 : 1
     item.quality = 50 if item.quality > 50
   end
