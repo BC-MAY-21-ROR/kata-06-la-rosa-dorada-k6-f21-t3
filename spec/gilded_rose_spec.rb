@@ -22,17 +22,17 @@ RSpec.describe GildedRose do
       expect(foo.name).to eq 'foo'
     end
 
-    it 'ctm TDD ' do
+    it 'Cheese method' do
       gilded_aged_brie.cheese?(aged_brie)
       expect(aged_brie.quality).to eq 41
     end
 
-    it 'Proving the fkin TDD >:c' do
+    it 'Backstage method' do
       gilded_backstage.backstage?(backstage)
       expect(backstage.quality).to eq 50
     end
 
-    it 'Keep the values' do
+    it 'Sulfuras case' do
       expect(sulfuras.sell_in).to eq 0
       expect(sulfuras.quality).to eq 80
     end
@@ -41,12 +41,11 @@ RSpec.describe GildedRose do
       gilded_mana_cake.cake?(mana_cake)
       expect(mana_cake.quality).to eq 0
     end
-  end
 
-  describe 'double speed method' do
-    it 'kakakakakka' do
+    it 'Double_speed method' do
       gilded_elixir.double_speed(elixir)
       expect(elixir.quality).to eq 0
     end
   end
+
 end
